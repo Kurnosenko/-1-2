@@ -1,0 +1,21 @@
+
+#include <iostream>
+#include <math.h>
+#include <stdio.h>
+using namespace std;
+
+int main()
+{
+    double x1,x2,y1,y2;
+    double R =0;
+    cout << "введите x1 \n";
+    cin >> x1;
+    cout << "введите y1 \n";
+    cin >> y1;
+    cout << "введите x2 \n";
+    cin >> x2;
+    cout << "введите y2 \n";
+    cin >> y2;
+    R = sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+    cout << "расстояние между точками равно:" << R;
+}
