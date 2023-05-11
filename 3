@@ -1,0 +1,24 @@
+
+#include <iostream>
+#include <math.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    int L = 0, p = 0, N = 0, result = 0;
+    cout << "введите число километров, которое спортсмен пробежал за день\n";
+    cin >> L;
+    cout << "введите процент, на который он увеличивал свой пробег\n";
+    cin >> p;
+    cout << "введите за сколько дней он это сделал\n";
+    cin >> N;
+    for (;N>0; N--)
+    {
+        result =result+L;
+        L = L+L/100*p; 
+       //cout << result<<"\n";
+    }
+    cout <<"суммарный пробег равен: "<< result<<" км";
+}
