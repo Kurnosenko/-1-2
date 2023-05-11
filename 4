@@ -1,0 +1,25 @@
+
+#include <iostream>
+#include <math.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    cout << "введите m \n";
+    int m;
+    cin >> m;
+    long int X[m];
+    X[0] = 1;
+    X[1] = 1;
+    for(int k = 2; k<=m ;k++)
+    {
+        X[k]=X[k-1]+X[k-2];
+    }
+    cout << "числа для данного периода:\n";
+    for(int i = 0; i<=m ; i++)
+    {
+        cout << X[i] <<"; ";
+    }
+}
