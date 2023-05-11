@@ -1,0 +1,23 @@
+
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+  int m1 = 0, m2 = 0, d = 0;    
+  double const y = 6.67 ;
+  long double result = 0.0, r = 0.0;
+  cout << "введите массу 1-го объекта \n";
+  cin >> m1;
+  cout << "введите массу 2-го объекта \n";
+  cin >> m2;
+  cout << "введите диаметр между объектами \n";
+  cin >> d;
+  r = d/2;
+  result = y*(m1*m2)/(r*r);
+  cout <<"сила взаимного притяжения равна:" << result <<"*10^-11";
+  return(0);
+}
